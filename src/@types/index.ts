@@ -1,7 +1,7 @@
 export interface FieldType {
   email?: string;
   password?: string;
-  remember?: string
+  remember?: string;
 }
 
 export interface RegisterType {
@@ -42,7 +42,6 @@ export interface AuthUser {
   };
 }
 
-
 // hero slider type
 export interface HeroSliderType {
   id: number;
@@ -64,7 +63,6 @@ export interface CategoryType {
   __v: number;
   _id: string;
 }
-
 
 // discount type
 export interface DiscounType {
@@ -95,9 +93,14 @@ export interface CartType {
   _id: string;
 }
 
-
 export interface TitleCategoryType {
-  id:number
-  title:string
-  label:string
+  id: number;
+  title: string;
+  label: string;
+}
+
+export interface DataTYpe {
+  isLoading?: Boolean;
+  isError?: Boolean;
+  data?: CartType;
 }
