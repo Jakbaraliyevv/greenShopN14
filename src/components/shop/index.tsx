@@ -19,7 +19,7 @@ function ShopComponents() {
     <section className="w-[90%] m-auto mt-[20px]">
       <div className="grid grid-cols-2 gap-5">
         <ShopSWipper data={data} isLoading={isLoading} isError={isError} />
-        <ShopDescription />
+        <ShopDescription data={data} isLoading={isLoading} isError={isError}  />
       </div>
     </section>
   );

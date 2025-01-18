@@ -22,7 +22,13 @@ const useLoader = () => {
     });
   };
 
-  return { category_loader, cart_loading };
+  const imageLoading = () => {
+    return Array.from({ length: 4 }).map((__, idx) => (
+      <Skeleton.Image key={idx} active={true} />
+    ));
+  };
+
+  return { category_loader, cart_loading, imageLoading };
 };
 
 export { useLoader };
